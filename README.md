@@ -24,10 +24,10 @@ A production-ready REST API backend for a finance dashboard system built with Sp
 - JWT-based stateless authentication
 - Role-based access control (ADMIN / ANALYST / VIEWER)
 - Full CRUD for financial transactions (income & expense)
-- Soft delete — deleted records are hidden, not removed
+- Soft delete - deleted records are hidden, not removed
 - Filtering by type, category, and date range
 - Pagination on all list endpoints
-- Dashboard summary — totals, net balance, category breakdown
+- Dashboard summary - totals, net balance, category breakdown
 - Monthly trend analytics
 - Global exception handling with clean error responses
 - Input validation with field-level error messages
@@ -482,28 +482,6 @@ Content-Type: application/json
   "data": null
 }
 ```
-
----
-
-## Deployment
-
-### Deploy Backend to Railway
-
-1. Push your code to GitHub
-2. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub**
-3. Select your repository
-4. Click **Add Plugin** → **PostgreSQL** — Railway auto-injects the database URL
-5. Go to **Variables** tab and add:
-
-```
-JWT_SECRET        = your-long-random-secret-key
-CORS_ALLOWED_ORIGINS = https://your-frontend.vercel.app
-```
-
-6. Railway builds and deploys automatically on every push
-
----
-
 
 ## Environment Variables
 
